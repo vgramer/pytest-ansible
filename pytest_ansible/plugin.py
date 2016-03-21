@@ -191,7 +191,7 @@ class PyTestAnsiblePlugin:
                 continue
             if any([fixture.startswith('ansible_') for fixture in item.fixturenames]):
                 # TODO - ignore if they are using a marker
-                marker = item.get_marker('ansible')
+                # marker = item.get_marker('ansible')
                 # if marker and 'inventory' in marker.kwargs:
                 uses_ansible_fixtures = True
                 break
