@@ -175,6 +175,7 @@ class PyTestAnsiblePlugin:
             # assert required --ansible-* parameters were used
             self.assert_required_ansible_parameters(config)
 
+    #TODO CHECK THTAT FOR VAULT_PASSWORD
     def _load_ansible_config(self, config):
         """Load ansible configuration from command-line."""
         option_names = ['ansible_inventory', 'ansible_host_pattern', 'ansible_connection', 'ansible_user',
